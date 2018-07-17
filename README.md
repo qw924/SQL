@@ -1,7 +1,4 @@
-# SQL
-## - Recommending Book: 
-1. [DATABASE SYSTEM CONCEPTS](https://kakeboksen.td.org.uit.no/Database%20System%20Concepts%206th%20edition.pdf)
-
+# Practical SQL
 ## - [Leetcode Database Problems](https://leetcode.com/problemset/database/)
 
 ## - Commonly Used at Work
@@ -9,3 +6,6 @@
 - Regular Expressions
 - Time Zone
 - Set Variable
+
+## - Recommending Book: 
+1. [DATABASE SYSTEM CONCEPTS](https://kakeboksen.td.org.uit.no/Database%20System%20Concepts%206th%20edition.pdf)
