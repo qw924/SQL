@@ -4,7 +4,7 @@
 
 ## - [Leetcode Database Problems](https://leetcode.com/problemset/database/)
 
-## Commonly Used at Work
+## - Commonly Used at Work
 - Deduplicate 
 - Regular Expressions
 - Time Zone
