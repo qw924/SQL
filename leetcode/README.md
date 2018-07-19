@@ -1,4 +1,4 @@
-### [595	Big Countries](https://leetcode.com/problems/big-countries/description/) //
+### [595	Big Countries](https://leetcode.com/problems/big-countries/description/)
 [Solution](https://github.com/qw924/practicalSQL/blob/master/leetcode/595BigCountries.md)
 ### 613	Shortest Distance in a Line 
 ### 627	Swap Salary  
