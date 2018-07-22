@@ -1,7 +1,7 @@
 ### [595	Big Countries](https://leetcode.com/problems/big-countries/description/)
 [Solution](https://github.com/qw924/practicalSQL/blob/master/leetcode/595BigCountries.md)
 ### 613	Shortest Distance in a Line 
-[Solution] (https://github.com/qw924/practicalSQL/blob/master/leetcode/613ShortestDistanceInALine.md)
+[Solution](https://github.com/qw924/practicalSQL/blob/master/leetcode/613ShortestDistanceInALine.md)
 ### 627	Swap Salary  
 [Solution](https://github.com/qw924/practicalSQL/blob/master/leetcode/627SwapSalary.md)
 ### 584	Find Customer Referee 
