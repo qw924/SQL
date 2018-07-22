@@ -31,4 +31,5 @@ FROM Logs, (SELECT @count := 0, @pre := -1) AS init
 ```
 
 ## Conclusion:
-[Use of IF](http://outofmemory.cn/code-snippet/1149/MySQL-if-case-statement-usage-summary)
+1. Easily to forget "Distinct"
+2. [Use of IF](http://outofmemory.cn/code-snippet/1149/MySQL-if-case-statement-usage-summary)
