@@ -31,7 +31,7 @@
 | [615.	Average Salary: Departments VS Company](https://leetcode.com/problems/average-salary-departments-vs-company/description/)|[Solution](https://github.com/qw924/practicalSQL/blob/master/leetcode/615_Average_Salary_DepartmentsVSCompany.md)|
 | 596.	Classes More Than 5 Students	| Solution| 
 | [197.	Rising Temperature](https://leetcode.com/problems/rising-temperature/description/)	| [Solution](https://github.com/qw924/practicalSQL/blob/master/leetcode/197_Rising_Temperature.md)| 
-| [178.	Rank Scores[(https://leetcode.com/problems/rank-scores/)|[Solution](https://github.com/qw924/practicalSQL/blob/master/leetcode/178RankScores.md)|
+| [178.	Rank Scores](https://leetcode.com/problems/rank-scores/)|[Solution](https://github.com/qw924/practicalSQL/blob/master/leetcode/178RankScores.md)|
 | 578.	Get Highest Answer Rate Question	| Solution| 
 | 579.	Find Cumulative Salary of an Employee| Solution| 
 | [180.	Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/description/)	|[Solution](https://github.com/qw924/practicalSQL/blob/master/leetcode/180_Consecutive_Numbers.md)|
