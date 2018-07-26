@@ -29,7 +29,7 @@
 | 574.	Winning Candidate	| Solution| 
 | 601.	Human Traffic of Stadium| Solution| 
 | [615.	Average Salary: Departments VS Company](https://leetcode.com/problems/average-salary-departments-vs-company/description/)|[Solution](https://github.com/qw924/practicalSQL/blob/master/leetcode/615_Average_Salary_DepartmentsVSCompany.md)|
-| 596.	Classes More Than 5 Students	| Solution| 
+| [596.	Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/description/)	| [Solution](https://github.com/qw924/practicalSQL/blob/master/leetcode/596_Classes_More_Than5Students.md)| 
 | [197.	Rising Temperature](https://leetcode.com/problems/rising-temperature/description/)	| [Solution](https://github.com/qw924/practicalSQL/blob/master/leetcode/197_Rising_Temperature.md)| 
 | [178.	Rank Scores](https://leetcode.com/problems/rank-scores/)|[Solution](https://github.com/qw924/practicalSQL/blob/master/leetcode/178RankScores.md)|
 | 578.	Get Highest Answer Rate Question	| Solution| 
