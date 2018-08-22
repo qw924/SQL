@@ -15,3 +15,5 @@ My Solution to Exercises
 
 ## - Online Documentation
 1. [MySQL Flow Control Statements](https://dev.mysql.com/doc/refman/5.7/en/flow-control-statements.html)
+
+## - Window Functions
