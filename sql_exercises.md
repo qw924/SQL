@@ -113,4 +113,74 @@ GROUP BY user_id, date
 ) tmp
 ORDER BY user_id, date;
 ```
+## Question 5
+We have two tables. One is user id and their signup date. The other one shows all transactions
+done by those users, when the transaction happens and its corresponding dollar amount.
+Find the average and median transaction amount only considering those transactions that
+happen on the same date as that user signed-up.
 
+### head (user,1)
+Column Name | Value | Description
+user_id | 121 | this is id of the user\
+sign_up_date | 2015-01-02 | user_id 121 signed up on Jan, 2.
+### head (transaction_table,1)
+Column Name | Value | Description\
+user_id | 856898 | this is id of the user who had that transaction\
+transaction_date | 2015-08-02 03:56:08 | transaction happened on Aug, 2 at almost 4AM.\
+transaction_amount | 49 | transaction amount was 49$.
+
+```
+SELECT AVG(transaction_amount) AS average,
+AVG(CASE WHEN row_num_asc BETWEEN row_num_desc-1 and row_num_desc+1
+THEN transaction_amount ELSE NULL END ) AS median
+FROM
+(
+SELECT transaction_amount,
+ROW_NUMBER() OVER(ORDER BY transaction_amount) row_num_asc,
+COUNT(*) OVER() - ROW_NUMBER() OVER(ORDER BY transaction_amount)+ 1 AS row_num_desc -- need row number for median. there are many other ways to do this
+FROM query_five_users a
+JOIN 
+(SELECT *, to_date(transaction_date) AS date_only 
+FROM
+query_five_transactions) b
+ON a.user_id = b.user_id AND a.sign_up_date = b.date_only
+) tmp;
+```
+## Question 6
+We have a table with users, their country and when they created the account. We want to find:
+The country with the largest and smallest number of users
+A query that returns for each country the first and the last user who signed up (if that
+country has just one user, it should just return that single user)
+
+### head (data,1)
+Column Name | Value | Description\
+user_id | 2 | this is id of the user\
+created_at | 2015-02-28 16:00:40 | user 2 created her account on Feb, 2 around 4PM\
+country | China | She is based in China
+```
+SELECT country, user_count
+FROM
+(
+SELECT *,
+ROW_NUMBER() OVER (ORDER BY user_count) count_asc,
+ROW_NUMBER() OVER (ORDER BY user_count desc) count_desc
+FROM (
+SELECT country, COUNT(distinct user_id) as user_count
+FROM query_six
+GROUP BY country
+) a
+) tmp
+WHERE count_asc = 1 or count_desc = 1;
+```
+```
+SELECT user_id, created_at, country
+FROM
+(
+SELECT *,
+ROW_NUMBER() OVER (PARTITION BY country ORDER BY created_at) as count_asc,
+ROW_NUMBER() OVER (PARTITION BY country ORDER BY created_at desc) as count_desc
+FROM query_six
+) tmp
+WHERE count_asc = 1 or count_desc = 1
+LIMIT 5;
+```
