@@ -11,7 +11,7 @@ My Solution to Exercises
 - Set Variable
 
 ## - Recommending Book: 
-1. [DATABASE SYSTEM CONCEPTS](https://kakeboksen.td.org.uit.no/Database%20System%20Concepts%206th%20edition.pdf)
+1. [DATABASE SYSTEM CONCEPTS](https://kakeboksen.td.org.uit.no/Database%20System%20Concepts%206th%20edition.pdf); [slides](http://codex.cs.yale.edu/avi/db-book/db6/slide-dir/index.html)
 
 ## - Online Documentation
 1. [MySQL Flow Control Statements](https://dev.mysql.com/doc/refman/5.7/en/flow-control-statements.html)
