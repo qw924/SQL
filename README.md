@@ -6,12 +6,41 @@ My Solution to Exercises
 
 ## - Commonly Used at Work
 - Deduplicate 
+```
+select * from 
+table t1
+    join
+    (
+      select id, max(date_last_modified) as max_date
+      table
+      group by id
+    ) t2
+    on (t1.id = t2.id and t1.date_last_modified = t2.max_date)
+```
+- Rank
+```
+select * from 
+(select *, rank() over (partition by id order by date_last_modified desc) as rank from table) g
+where rank = 1; 
+```
 - Regular Expressions
+```
+regexp_extract(var, 'patter') as var
+```
 - Time Zone
 - Set Variable
+```
+set hivevar:this_year = 2018;
+select sum(case when year(year)=${this_year} then spend else 0.0 end) as spend_this_year
+```
+```
+set date = 20180826;
+select * from table
+where dt > ${hiveconf:date};
+```
 
 ## - Recommending Book: 
-1. [DATABASE SYSTEM CONCEPTS](https://kakeboksen.td.org.uit.no/Database%20System%20Concepts%206th%20edition.pdf); [slides](http://codex.cs.yale.edu/avi/db-book/db6/slide-dir/index.html)
+1. [DATABASE SYSTEM CONCEPTS](https://kakeboksen.td.org.uit.no/Database%20System%20Concepts%206th%20edition.pdf); [Slides](http://codex.cs.yale.edu/avi/db-book/db6/slide-dir/index.html)
 
 ## - Online Documentation
 1. [MySQL Flow Control Statements](https://dev.mysql.com/doc/refman/5.7/en/flow-control-statements.html)
