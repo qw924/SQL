@@ -49,3 +49,4 @@ where dt > ${hiveconf:date};
 2. [SQL Tutorial - Friendly tips to help you learn SQL](http://www.wagonhq.com/sql-tutorial)
 
 ## - Window Functions
+1. [Postgres even included linear regressions](https://www.postgresql.org/docs/9.4/static/functions-aggregate.html)
