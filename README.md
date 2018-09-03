@@ -38,11 +38,14 @@ set date = 20180826;
 select * from table
 where dt > ${hiveconf:date};
 ```
-
+- [Create a Histogram](https://github.com/qw924/practicalSQL/blob/master/CreatingHistogram.md)
+- Calculate a Joint Distribution
+- Calculate Percentiles
 ## - Recommending Book: 
 1. [DATABASE SYSTEM CONCEPTS](https://kakeboksen.td.org.uit.no/Database%20System%20Concepts%206th%20edition.pdf); [Slides](http://codex.cs.yale.edu/avi/db-book/db6/slide-dir/index.html)
 
 ## - Online Documentation
 1. [MySQL Flow Control Statements](https://dev.mysql.com/doc/refman/5.7/en/flow-control-statements.html)
+2. [SQL Tutorial - Friendly tips to help you learn SQL](http://www.wagonhq.com/sql-tutorial)
 
 ## - Window Functions
