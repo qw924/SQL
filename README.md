@@ -47,6 +47,7 @@ where dt > ${hiveconf:date};
 ## - Online Documentation
 1. [MySQL Flow Control Statements](https://dev.mysql.com/doc/refman/5.7/en/flow-control-statements.html)
 2. [SQL Tutorial - Friendly tips to help you learn SQL](http://www.wagonhq.com/sql-tutorial)
+3. [Making Histogram Frequency Distributions in SQL](http://www.silota.com/docs/recipes/sql-histogram-summary-frequency-distribution.html)
 
 ## - Window Functions
 1. [Postgres even included linear regressions](https://www.postgresql.org/docs/9.4/static/functions-aggregate.html)
