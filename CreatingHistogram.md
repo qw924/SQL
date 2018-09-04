@@ -35,7 +35,7 @@ order by 1;
 ```
 SELECT 
 Gender,
-count(CASE WHEN Age>= 10 AND Age < 20 THEN 1 END) AS [10 - 20],
+count(CASE WHEN Age>= 10 AND Age < 20 THEN 1 END) AS [10 - 20], --dong't use '10-20'
 count(CASE WHEN Age>= 21 AND Age < 30 THEN 1 END) AS [21 - 30],
 count(CASE WHEN Age>= 31 AND Age < 35 THEN 1 END) AS [31 - 35],
 count(CASE WHEN Age>= 36 AND Age < 40 THEN 1 END) AS [36 - 40]
