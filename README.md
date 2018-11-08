@@ -4,7 +4,7 @@ My Solution to Exercises
 ## - [Leetcode Database Problems](https://leetcode.com/problemset/database/)
 [Solution](https://github.com/qw924/practicalSQL/tree/master/leetcode)
 
-## - Commonly Used at Work
+## - Commonly Used
 - Deduplicate 
 ```
 select * from 
@@ -22,6 +22,15 @@ table t1
 select * from 
 (select *, rank() over (partition by id order by date_last_modified desc) as rank from table) g
 where rank = 1; 
+```
+```
+select location_id, category_id, time, seller_id, category_revenue, item_cnt, revenue_share, item_share, rk
+from
+(select *, rank() over (PARTITION BY item_id order by market_share desc, revenue_share desc ) as rk
+from item_seller_share
+where location_id = ${location_id} and item_share >${item_share}
+) A
+WHERE rk <=${top_n};
 ```
 - Regular Expressions
 ```
