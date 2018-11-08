@@ -27,6 +27,15 @@ where rank = 1;
 ```
 regexp_extract(var, 'patter') as var
 ```
+```
+regexp_extract(page_url,'.*/item/([0-9\\.]+)/',1) as item_id
+```
+```
+regexp_extract(column, '\\;Price=([0-9\\.]+)',1) as Price
+```
+```
+substr(TAG,1,7) = 'RECO_EXP'
+```
 - Time Zone
 - Set Variable
 ```
