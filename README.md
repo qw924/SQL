@@ -56,6 +56,17 @@ set date = 20180826;
 select * from table
 where dt > ${hiveconf:date};
 ```
+-- With
+```
+with q1 as (
+
+), 
+q2 as (
+
+)
+select
+from q2
+```
 - [Create a Histogram](https://github.com/qw924/practicalSQL/blob/master/CreatingHistogram.md)
 - Calculate a Joint Distribution
 - Calculate Percentiles
